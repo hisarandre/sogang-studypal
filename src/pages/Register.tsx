@@ -93,7 +93,7 @@ export default function Register() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="flex flex-col justify-center items-center px-4 w-full">
+      className="min-h-screen flex flex-col justify-center items-center px-4 w-full">
 
       <h1>Sign up</h1>
 
