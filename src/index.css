@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'UnifontExMono';
+  src: url('/fonts/Unifontexmono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text;
+  }
+} 
+
+
+/**  TEXTS   **/
+
+h1 {
+  @apply text-title text-5xl font-light;
+  font-family: 'Unifontexmono', monospace;
+}
+
+h2 {
+  @apply text-primary text-3xl font-semibold mb-8;
+}
+
+h3 {
+  @apply text-4xl font-bold font-pixelify-sans;
+}
+
+h4 {
+  @apply text-xl font-pixelify-sans opacity-75;
+}
+
+p {
+  @apply text-lg max-w-prose mx-auto leading-relaxed mb-8 ;
+}
+
+.level-title {
+  @apply text-center text-title text-4xl font-bold
+}
+
+.hangul {
+  font-family: 'Unifontexmono', monospace;
+}
+/**  INPUTS   **/
+
+
+.input-label {
+  @apply text-text;
+}
+
+.input {
+  @apply text-title bg-background;
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid gray;
+  padding: 0.5rem 0.75rem;
+  transition: border-color 0.15s ease-in-out, ease-in-out;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom: 1px solid transparent;
+}
+
+
+.input-error{
+  @apply text-red-500 text-xs;
+  font-family: 'Pixelify Sans', monospace;
+}
+
+/**  BUTTONS  **/
+
+.button {
+  @apply rounded-md text-lg py-3 font-medium shadow-sm transition-colors duration-200 ease-in-out text-center bg-primary text-white border-none;
+  font-family: 'Pixelify Sans', monospace;
+}
+
+.button:hover {
+  @apply bg-primary/90;
+}
+
+.button-outline {
+  @apply bg-transparent text-primary border border-solid border-primary;
+  font-family: 'Pixelify Sans', monospace;
+}
+
+.button-outline:hover {
+  @apply bg-primary text-white;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+
